@@ -36,8 +36,8 @@
             basename    CDATA        #REQUIRED
             name        CDATA        #IMPLIED
             dirname     CDATA        #IMPLIED
-            uid         CDATA        #IMPLIED
-            gid         CDATA        #IMPLIED
+            username    CDATA        #IMPLIED
+            group       CDATA        #IMPLIED
             perms       CDATA        #IMPLIED>
 
 <!-- File -->
@@ -47,10 +47,10 @@
             basename    CDATA        #REQUIRED
             name        CDATA        #IMPLIED
             dirname     CDATA        #IMPLIED
-            uid         CDATA        #IMPLIED
-            gid         CDATA        #IMPLIED
+            username    CDATA        #IMPLIED
+            group       CDATA        #IMPLIED
             perms       CDATA        #IMPLIED
-            href        CDATA        #REQUIRED>
+            href        CDATA        #IMPLIED>
 
 <!-- Symbolic Link -->
 <!ELEMENT  link         EMPTY>
