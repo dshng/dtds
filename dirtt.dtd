@@ -27,7 +27,7 @@
             basename    CDATA        #REQUIRED
             name        CDATA        #REQUIRED
             version     CDATA        #REQUIRED
-            dirname     CDATA        #IMPLIED>
+            dirname     CDATA        #REQUIRED>
 
 <!-- Folder/Directory -->
 <!ELEMENT   dir         (dir | file | link )*>
@@ -35,7 +35,6 @@
             id          ID           #REQUIRED
             basename    CDATA        #REQUIRED
             name        CDATA        #IMPLIED
-            dirname     CDATA        #IMPLIED
             username    CDATA        #IMPLIED
             group       CDATA        #IMPLIED
             perms       CDATA        #IMPLIED>
@@ -46,7 +45,6 @@
             id          ID           #REQUIRED
             basename    CDATA        #REQUIRED
             name        CDATA        #IMPLIED
-            dirname     CDATA        #IMPLIED
             username    CDATA        #IMPLIED
             group       CDATA        #IMPLIED
             perms       CDATA        #IMPLIED
@@ -58,7 +56,6 @@
            id           ID           #REQUIRED
            basename     CDATA        #REQUIRED
            name         CDATA        #IMPLIED
-           dirname      CDATA        #IMPLIED
            idref        ID           #IMPLIED
            target       CDATA        #IMPLIED>
 
