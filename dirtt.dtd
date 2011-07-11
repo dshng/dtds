@@ -32,8 +32,8 @@
 <!-- Folder/Directory -->
 <!ELEMENT   dir         (dir | file | link )*>
 <!ATTLIST   dir
-            id          ID           #REQUIRED
             basename    CDATA        #REQUIRED
+            id          ID           #IMPLIED
             name        CDATA        #IMPLIED
             username    CDATA        #IMPLIED
             group       CDATA        #IMPLIED
@@ -42,8 +42,8 @@
 <!-- File -->
 <!ELEMENT   file        EMPTY>
 <!ATTLIST   file
-            id          ID           #REQUIRED
             basename    CDATA        #REQUIRED
+            id          ID           #IMPLIED
             name        CDATA        #IMPLIED
             username    CDATA        #IMPLIED
             group       CDATA        #IMPLIED
@@ -53,9 +53,9 @@
 <!-- Symbolic Link -->
 <!ELEMENT  link         EMPTY>
 <!ATTLIST  link
-           id           ID           #REQUIRED
            basename     CDATA        #REQUIRED
+           id           ID           #IMPLIED
            name         CDATA        #IMPLIED
-           idref        ID           #IMPLIED
-           target       CDATA        #IMPLIED>
+           idref        IDREF        #IMPLIED
+           ref          CDATA        #IMPLIED>
 
